@@ -1,0 +1,125 @@
+@import "tailwindcss";
+@import "./themes/horror.css";
+
+@theme {
+  /* Horror Color Palette */
+  --color-void: #000000;
+  --color-abyss: #0a0a0a;
+  --color-shadow: #1a1a1a;
+  --color-ash: #2a2a2a;
+  --color-smoke: #404040;
+  --color-fog: #6b6b6b;
+  --color-bone: #d4d4d4;
+  --color-pale: #e5e5e5;
+
+  --color-blood: #8b0000;
+  --color-blood-bright: #cc0000;
+  --color-rust: #6b3a2a;
+
+  --color-terminal: #00ff41;
+  --color-terminal-dim: #00aa2a;
+  --color-cyber: #00ffff;
+  --color-cyber-dim: #008b8b;
+  --color-warning: #ffaa00;
+  --color-error: #ff4444;
+
+  --color-bsod: #0078d7;
+
+  /* Typography */
+  --font-mono: "IBM Plex Mono", "Courier New", monospace;
+  --font-system: "Segoe UI", "MS Sans Serif", Tahoma, sans-serif;
+  --font-display: "IBM Plex Mono", monospace;
+
+  /* Spacing */
+  --spacing-px: 1px;
+
+  /* Animations */
+  --animate-flicker: flicker 0.15s infinite;
+  --animate-pulse-slow: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  --animate-glitch: glitch 0.3s infinite;
+  --animate-scanline: scanline 8s linear infinite;
+}
+
+@keyframes flicker {
+  0%,
+  100% {
+    opacity: 0.97;
+  }
+  50% {
+    opacity: 0.95;
+  }
+  25%,
+  75% {
+    opacity: 0.98;
+  }
+}
+
+@keyframes glitch {
+  0%,
+  100% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, 1px);
+  }
+  40% {
+    transform: translate(2px, -1px);
+  }
+  60% {
+    transform: translate(-1px, 2px);
+  }
+  80% {
+    transform: translate(1px, -2px);
+  }
+}
+
+@keyframes scanline {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100vh);
+  }
+}
+
+/* Base styles */
+html {
+  background-color: var(--color-void);
+  color: var(--color-bone);
+  font-family: var(--font-mono);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Selection styling */
+::selection {
+  background-color: var(--color-blood);
+  color: var(--color-pale);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-abyss);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-smoke);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-fog);
+}
+
+/* Cursor override for horror feel */
+.cursor-crosshair {
+  cursor: crosshair;
+}

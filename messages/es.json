@@ -1,0 +1,70 @@
+{
+  "app": {
+    "title": "Esta Pagina Miente",
+    "subtitle": "Una experiencia de horror meta en la web",
+    "version": "v{version}"
+  },
+  "trigger_warning": {
+    "heading": "ESTA PAGINA MIENTE",
+    "uses_label": "Esta experiencia incluye:",
+    "warning_flashing": "Efectos de parpadeo y destellos estroboscopicos",
+    "warning_audio": "Audio espacial y sonidos perturbadores",
+    "warning_fake_errors": "Mensajes de error falsos y dialogos del sistema",
+    "warning_browser": "Manipulacion del navegador y rastreo",
+    "warning_horror": "Elementos de horror psicologico",
+    "toggle_animations": "Desactivar animaciones",
+    "toggle_audio": "Desactivar audio",
+    "toggle_jumpscares": "Desactivar sustos repentinos",
+    "toggle_strobes": "Desactivar efectos estroboscopicos",
+    "toggle_contrast": "Modo de alto contraste",
+    "enter_button": "ENTIENDO, DEJAME ENTRAR"
+  },
+  "game": {
+    "investigate": "INVESTIGAR",
+    "settings": "AJUSTES",
+    "welcome_line1": "No deberias estar aqui.",
+    "welcome_line2": "Pero ya que estas...",
+    "welcome_line3": "Juguemos.",
+    "puzzle_solved": "Puzzle resuelto!",
+    "puzzle_failed": "Has fallado.",
+    "score_label": "Puntuacion",
+    "streak_label": "Racha",
+    "hint_available": "Pista disponible",
+    "time_remaining": "Tiempo restante: {seconds}s"
+  },
+  "settings": {
+    "heading": "Ajustes",
+    "accessibility": "Accesibilidad",
+    "reduced_motion": "Reducir movimiento",
+    "no_audio": "Desactivar audio",
+    "no_jumpscares": "Sin sustos repentinos",
+    "no_strobes": "Sin efectos estroboscopicos",
+    "high_contrast": "Alto contraste",
+    "screen_reader": "Modo lector de pantalla",
+    "volume": "Volumen",
+    "back": "Volver al juego"
+  },
+  "cookie_consent": {
+    "heading": "Aviso de Cookies",
+    "description": "Este sitio usa cookies y almacenamiento local para la funcionalidad del juego.",
+    "essential": "Esenciales (Obligatorias)",
+    "analytics": "Analiticas anonimas",
+    "preferences": "Preferencias",
+    "accept_all": "Aceptar todo",
+    "reject_optional": "Rechazar opcionales",
+    "save": "Guardar preferencias"
+  },
+  "privacy": {
+    "heading": "Politica de Privacidad",
+    "last_updated": "Ultima actualizacion: {date}",
+    "data_collection": "Recopilacion de datos",
+    "meta_mechanics": "Mecanicas basadas en el navegador",
+    "your_rights": "Tus derechos",
+    "contact": "Contacto"
+  },
+  "errors": {
+    "generic": "Algo salio mal",
+    "offline": "Parece que no tienes conexion",
+    "firebase_init": "Error al inicializar los servicios"
+  }
+}

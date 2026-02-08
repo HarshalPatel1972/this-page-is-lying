@@ -1,0 +1,70 @@
+{
+  "app": {
+    "title": "このページは嘘をついている",
+    "subtitle": "メタホラー・ウェブ体験",
+    "version": "v{version}"
+  },
+  "trigger_warning": {
+    "heading": "このページは嘘をついている",
+    "uses_label": "この体験には以下の要素が含まれます：",
+    "warning_flashing": "フラッシュおよびストロボ効果",
+    "warning_audio": "立体音響と不快な音声",
+    "warning_fake_errors": "偽のエラーメッセージとシステムダイアログ",
+    "warning_browser": "ブラウザの操作とトラッキング",
+    "warning_horror": "心理的ホラー要素",
+    "toggle_animations": "アニメーションを無効にする",
+    "toggle_audio": "音声を無効にする",
+    "toggle_jumpscares": "驚かし演出を無効にする",
+    "toggle_strobes": "ストロボ効果を無効にする",
+    "toggle_contrast": "ハイコントラストモード",
+    "enter_button": "理解しました、始めます"
+  },
+  "game": {
+    "investigate": "調査する",
+    "settings": "設定",
+    "welcome_line1": "ここに来るべきではなかった。",
+    "welcome_line2": "でも、来てしまった以上は……",
+    "welcome_line3": "ゲームを始めよう。",
+    "puzzle_solved": "パズルクリア！",
+    "puzzle_failed": "失敗した。",
+    "score_label": "スコア",
+    "streak_label": "連続記録",
+    "hint_available": "ヒントあり",
+    "time_remaining": "残り時間：{seconds}秒"
+  },
+  "settings": {
+    "heading": "設定",
+    "accessibility": "アクセシビリティ",
+    "reduced_motion": "モーション軽減",
+    "no_audio": "音声を無効にする",
+    "no_jumpscares": "驚かし演出なし",
+    "no_strobes": "ストロボ効果なし",
+    "high_contrast": "ハイコントラスト",
+    "screen_reader": "スクリーンリーダーモード",
+    "volume": "音量",
+    "back": "ゲームに戻る"
+  },
+  "cookie_consent": {
+    "heading": "Cookieに関するお知らせ",
+    "description": "本サイトではゲーム機能のためにCookieおよびローカルストレージを使用しています。",
+    "essential": "必須（Required）",
+    "analytics": "匿名アナリティクス",
+    "preferences": "設定の保存",
+    "accept_all": "すべて許可",
+    "reject_optional": "任意のものを拒否",
+    "save": "設定を保存"
+  },
+  "privacy": {
+    "heading": "プライバシーポリシー",
+    "last_updated": "最終更新日：{date}",
+    "data_collection": "データの収集",
+    "meta_mechanics": "ブラウザベースの仕組み",
+    "your_rights": "あなたの権利",
+    "contact": "お問い合わせ"
+  },
+  "errors": {
+    "generic": "問題が発生しました",
+    "offline": "オフラインのようです",
+    "firebase_init": "サービスの初期化に失敗しました"
+  }
+}

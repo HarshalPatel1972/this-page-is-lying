@@ -1,0 +1,70 @@
+{
+  "app": {
+    "title": "This Page Is Lying",
+    "subtitle": "A meta-horror web experience",
+    "version": "v{version}"
+  },
+  "trigger_warning": {
+    "heading": "THIS PAGE IS LYING",
+    "uses_label": "This experience uses:",
+    "warning_flashing": "Flashing and strobe effects",
+    "warning_audio": "Spatial audio and disturbing sounds",
+    "warning_fake_errors": "Fake error messages and system dialogs",
+    "warning_browser": "Browser manipulation and tracking",
+    "warning_horror": "Psychological horror elements",
+    "toggle_animations": "Disable animations",
+    "toggle_audio": "Disable audio",
+    "toggle_jumpscares": "Disable jumpscares",
+    "toggle_strobes": "Disable strobe effects",
+    "toggle_contrast": "High contrast mode",
+    "enter_button": "I UNDERSTAND, LET ME IN"
+  },
+  "game": {
+    "investigate": "INVESTIGATE",
+    "settings": "SETTINGS",
+    "welcome_line1": "You shouldn't be here.",
+    "welcome_line2": "But since you are...",
+    "welcome_line3": "Let's play a game.",
+    "puzzle_solved": "Puzzle solved!",
+    "puzzle_failed": "You failed.",
+    "score_label": "Score",
+    "streak_label": "Streak",
+    "hint_available": "Hint available",
+    "time_remaining": "Time remaining: {seconds}s"
+  },
+  "settings": {
+    "heading": "Settings",
+    "accessibility": "Accessibility",
+    "reduced_motion": "Reduced motion",
+    "no_audio": "Disable audio",
+    "no_jumpscares": "No jumpscares",
+    "no_strobes": "No strobe effects",
+    "high_contrast": "High contrast",
+    "screen_reader": "Screen reader mode",
+    "volume": "Volume",
+    "back": "Back to game"
+  },
+  "cookie_consent": {
+    "heading": "Cookie Notice",
+    "description": "This site uses cookies and local storage for gameplay functionality.",
+    "essential": "Essential (Required)",
+    "analytics": "Anonymous Analytics",
+    "preferences": "Preferences",
+    "accept_all": "Accept All",
+    "reject_optional": "Reject Optional",
+    "save": "Save Preferences"
+  },
+  "privacy": {
+    "heading": "Privacy Policy",
+    "last_updated": "Last updated: {date}",
+    "data_collection": "Data Collection",
+    "meta_mechanics": "Browser-Based Mechanics",
+    "your_rights": "Your Rights",
+    "contact": "Contact"
+  },
+  "errors": {
+    "generic": "Something went wrong",
+    "offline": "You appear to be offline",
+    "firebase_init": "Failed to initialize services"
+  }
+}

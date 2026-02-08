@@ -1,0 +1,34 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Players - users can only read/write their own profile
+    match /players/{userId} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+    }
+
+    // Sessions - users can only access their own sessions
+    match /sessions/{sessionId} {
+      allow read, write: if request.auth != null && resource == null || resource.data.uid == request.auth.uid;
+      allow create: if request.auth != null && request.resource.data.uid == request.auth.uid;
+    }
+
+    // Active puzzles - write-once by authorized user, read by owner
+    match /active_puzzles/{puzzleId} {
+      allow read: if request.auth != null && resource.data.userId == request.auth.uid;
+      allow create: if request.auth != null && request.resource.data.userId == request.auth.uid;
+    }
+
+    // Puzzle validations - created by cloud functions only
+    match /puzzle_validations/{docId} {
+      allow read: if false;
+      allow write: if false;
+    }
+
+    // Leaderboard - read-only from client
+    match /leaderboard/{userId} {
+      allow read: if true;
+      allow write: if false;
+    }
+  }
+}
