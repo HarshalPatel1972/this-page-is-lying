@@ -1,5 +1,6 @@
 import type { Handle } from "@sveltejs/kit";
 import { generateCSPHeader } from "$lib/security/csp";
+import { dev } from "$app/environment";
 
 export const handle: Handle = async ({ event, resolve }) => {
   const response = await resolve(event);
@@ -21,8 +22,10 @@ export const handle: Handle = async ({ event, resolve }) => {
     "camera=(), microphone=(), geolocation=()",
   );
 
-  // Content Security Policy.
-  response.headers.set("Content-Security-Policy", generateCSPHeader());
+  // Content Security Policy - DISABLED in dev mode for easier debugging
+  if (!dev) {
+    response.headers.set("Content-Security-Policy", generateCSPHeader());
+  }
 
   // ---------- CORS ----------
   // For same-origin SvelteKit apps CORS headers are not strictly required.

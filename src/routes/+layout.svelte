@@ -13,6 +13,7 @@
   let showConsent = $state(false);
 
   onMount(() => {
+    console.log('✓ +layout mounted');
     // Check if consent has been given
     const consent = localStorage.getItem('tpil-consent');
     if (!consent) showConsent = true;
