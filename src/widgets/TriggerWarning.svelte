@@ -34,17 +34,11 @@
   }
 
   function handleEnter() {
-    console.log('✓ TriggerWarning handleEnter called');
     try {
-      console.log('1. Calling gameState.markInteracted()');
       gameState.markInteracted();
-      console.log('2. Calling gameState.startSession()');
       gameState.startSession();
-      console.log('3. Setting isVisible = false');
       isVisible = false;
-      console.log('4. Calling onenter callback');
       onenter?.();
-      console.log('5. All done!');
     } catch (error) {
       console.error('❌ Error in handleEnter:', error);
     }
