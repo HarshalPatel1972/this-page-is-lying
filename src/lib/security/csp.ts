@@ -15,7 +15,6 @@ const directives: CSPDirectives = {
   "script-src": [
     "'self'",
     "'unsafe-inline'", // Required for Svelte hydration and component execution
-    "'unsafe-eval'", // Required for some browser extensions and runtime evaluation
     "https://*.firebaseapp.com",
     "https://*.googleapis.com",
   ],
